@@ -24,7 +24,7 @@ colnames(merged_data) <- header[, 2]
 
 ## 2. Extracts only the measurements on the mean and standard deviation
 ## for each measurement
-mean_std <- grep("*mean()*|*std()*|Activity|Subject", header[, 2])
+mean_std <- grep("mean\\(|std|Activity|Subject", header[, 2])
 merged_data_meanstd <- merged_data[, mean_std]
 
 ## 3. Uses descriptive activity names to name the activities in the data set
@@ -44,7 +44,10 @@ colnames(merged_data_meanstd) <- header
 
 ## 5. From data set in step 4, create a second, independent tidy data set with
 ## the average of each variable for each activity and each subject
-header2 <- header[2:80]
-summarized_data <- merged_data_meanstd %>%
+header2 <- header[2:67]
+tidy_data_set <- merged_data_meanstd %>%
         group_by(Subject, Activity) %>%
         summarize_at(header2, mean)
+
+## Export tidy data set
+write.table(tidy_data_set, file = "tidy_data_set.txt", row.names = FALSE)
