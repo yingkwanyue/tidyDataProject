@@ -14,7 +14,8 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis.
 
-## This repository contains 4 files:
+## Files in This Respository
+This repository contains the following files:
 - R Script used to clean and generate tidy dataset (tidy_data_set.txt)
 - Cleaned dataset "tidy_data_set.txt"
 - Codebook for tidy_data_set
