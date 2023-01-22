@@ -55,5 +55,3 @@ The data set includes the average mean and standard deviation for each signal va
 *frequency_body_angular_velocity_jerk_magnitude-mean()*: Frequency domain signal body angular velocity jerk magnitude mean\
 *frequency_body_angular_velocity_jerk_magnitude-std()*: Frequency domain signal body angular velocity jerk magnitude standard deviation\
 *Activity*: Activity Type\
-\
-##
